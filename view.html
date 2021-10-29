@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}View messages{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% if random_messages %}
+    {% for m in random_messages %}
+    <br>
+    "{{m[2]}}"
+    <br>
+    - {{m[1]}}
+    <br>
+    {% endfor %}
+  {% endif %}
+{% endblock %}
