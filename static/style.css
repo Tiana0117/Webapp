@@ -1,0 +1,30 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: royalblue;
+  font-family: papyrus;
+}
+nav {
+    background: AntiqueWhite;
+    padding: 0 0.5rem;
+    border-radius: 25px;
+}
+
+nav ul  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0.5rem;
+}
+.content {
+    padding: 0 1rem 1rem;
+    background: white;
+    border-radius: 25px;
+    font-family: fantasy;
+}

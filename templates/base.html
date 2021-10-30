@@ -1,8 +1,12 @@
 <!doctype html>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<html>
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
 <title>A Simple Message Bank - Tiana</title>
 <nav>
-  <h1>Submit message here</h1>
+  <h1>Message Bank</h1>
   <ul>
   	<li><a href = "{{url_for('submit') }}">Submit a message</a></li>
   	<li><a href = "{{url_for('view') }}">View messages</a></li>
@@ -14,3 +18,5 @@
   </header>
   {% block content %}{% endblock %}
 </section>
+</body>
+</html>
