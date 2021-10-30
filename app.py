@@ -1,7 +1,7 @@
 from flask import Flask, current_app, g, render_template, redirect, request, flash, url_for, session
 from flask.cli import with_appcontext
 
-# from werkzeug.security import check_password_hash, generate_password_hash
+
 
 import sqlite3
 import click
@@ -38,8 +38,7 @@ def insert_message(request):
 		cursor.execute("INSERT INTO messages (id, handle, message) VALUES (" + str(row_num[0]+1) + ", \"" + handle + "\", \"" + message + "\")")
 		get_message_db().commit()
 		get_message_db().close()
-		# db = get_message_db()
-		# error = None
+
 
 
 def random_messages(n):
